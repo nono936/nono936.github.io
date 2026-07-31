@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>NovaForge Studio</title>
+</head>
+<body>
+
+<h1>NovaForge Studio</h1>
+
+<button id="login">使用 Google 登入</button>
+<button id="logout">登出</button>
+
+<p id="user">尚未登入</p>
+
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+import {
+  getAuth,
+  GoogleAuthProvider,
+  signInWithPopup,
+  signOut
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDelmWFCWESsVJ4XSfjf64SwUK8mFBw4JQ",
+  authDomain: "novaforge-a8230.firebaseapp.com",
+  projectId: "novaforge-a8230",
+  storageBucket: "novaforge-a8230.firebasestorage.app",
+  messagingSenderId: "408038791775",
+  appId: "1:408038791775:web:6862574076d0391f6d59ea"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+
+document.getElementById("login").onclick = async () => {
+  try {
+    const result = await signInWithPopup(auth, provider);
+    document.getElementById("user").innerHTML =
+      `歡迎 ${result.user.displayName}`;
+  } catch (e) {
+    alert(e.message);
+  }
+};
+
+document.getElementById("logout").onclick = async () => {
+  await signOut(auth);
+  document.getElementById("user").innerHTML = "尚未登入";
+};
+
+</script>
+
+</body>
+</html>
