@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="你的名字｜世界導覽式個人介紹網站" />
+  <meta name="theme-color" content="#0a171c" />
+  <title>你的名字｜雲境創作</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2308171d'/%3E%3Cpath d='M15 42 28 16l6 14 7-9 9 21' fill='none' stroke='%23fff' stroke-width='5'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+  <div class="scroll-meter" aria-hidden="true"><i></i></div>
+
+  <header class="topbar">
+    <a class="logo" href="#home" aria-label="回到首頁">
+      <span class="logo-zh">雲境創作</span><span class="logo-en">YUNJING<br />CREATIVE</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav"><span></span><span></span><span class="sr-only">開啟導覽</span></button>
+    <nav class="nav" id="nav" aria-label="主要導覽">
+      <a class="active" href="#overworld">主世界</a><a href="#inferno">地獄</a><a href="#end">終界</a><a href="#credits">成員</a><a href="#contact">加入我們</a>
+    </nav>
+    <div class="top-actions">
+      <button class="scene-button icon-button" type="button" aria-label="切換場景亮度">☼</button>
+      <span class="pill-button"><span>◎</span> 繁</span>
+      <a class="pill-button contact-pill" href="#contact"><span>✉</span> 聯絡</a>
+    </div>
+  </header>
+
+  <aside class="chapter-dots" aria-label="章節進度">
+    <a class="active" href="#home"><span>00</span></a><a href="#overworld"><span>01</span></a><a href="#inferno"><span>02</span></a><a href="#end"><span>03</span></a><a href="#credits"><span>04</span></a>
+  </aside>
+
+  <main id="main">
+    <section class="hero story-section" id="home" data-chapter="00" aria-labelledby="hero-title">
+      <div class="scene scene-cloud" data-parallax aria-hidden="true"></div><div class="scene-shade"></div>
+      <div class="hero-mark" aria-hidden="true"><span>Y</span><i></i><span>N</span></div>
+      <div class="world-status reveal"><p>開站 <strong>2026.10.23</strong></p><p>運行 <strong id="live-clock">00:00:00</strong></p></div>
+      <div class="rail rail-hero" aria-hidden="true"><b></b><i></i><b></b><i></i><b></b></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">YUNJING · PERSONAL CREATIVE WORLD</p>
+        <h1 id="hero-title">在虛實之間，<br />建造自己的世界。</h1>
+        <p>嗨，我是<strong>你的名字</strong>。喜歡設計、開發與創造，把每個想法雕成能被看見、被使用，也被記住的作品。</p>
+        <a class="primary-button" href="#overworld">開始探索 <span>→</span></a>
+        <div class="scroll-cue"><i></i>往下捲，走過三個維度</div>
+      </div>
+      <div class="vertical-title reveal" aria-label="雲境創作"><span>雲</span><span>境</span><span>創</span><span>作</span></div>
+      <div class="scene-count">00 <i></i> 04</div>
+    </section>
+
+    <section class="world chapter-overworld story-section page-fold" id="overworld" data-chapter="01" aria-labelledby="overworld-title">
+      <div class="scene scene-cloud" data-parallax aria-hidden="true"></div><div class="chapter-shade cloud-shade"></div>
+      <div class="rail" aria-hidden="true"><b></b><i></i><b></b><i></i><b></b></div>
+      <div class="chapter-copy chapter-copy-left reveal">
+        <p class="eyebrow">01 / OVERWORLD</p>
+        <h2 id="overworld-title">把靈感，<br />蓋成可以抵達的地方。</h2>
+        <p>這裡是我的主世界。我在設計與程式之間工作，從梳理問題、畫出路徑，到完成能真正操作的網站。</p>
+        <dl class="world-facts"><div><dt>專長</dt><dd>視覺設計 · 網站體驗</dd></div><div><dt>工具</dt><dd>HTML · CSS · JavaScript</dd></div><div><dt>座標</dt><dd>TAIWAN · UTC+8</dd></div></dl>
+      </div>
+      <div class="chapter-name reveal"><small>WORLD 01</small><strong>主世界</strong></div>
+      <p class="chapter-caption">每個作品，都是一座被耐心建起來的城市。</p>
+    </section>
+
+    <section class="world chapter-inferno story-section page-fold" id="inferno" data-chapter="02" aria-labelledby="inferno-title">
+      <div class="scene scene-inferno" data-parallax aria-hidden="true"></div><div class="chapter-shade inferno-shade"></div>
+      <div class="rail" aria-hidden="true"><b></b><i></i><b></b><i></i><b></b></div>
+      <div class="side-index reveal"><span>02</span><i></i><p>VISUAL DESIGN<br />EXPERIENCE<br />FRONT-END</p></div>
+      <div class="chapter-copy chapter-copy-center reveal">
+        <p class="eyebrow">02 / THE CRAFT</p>
+        <h2 id="inferno-title">在限制裡，<br />淬鍊真正的作品。</h2>
+        <p>困難不是終點，而是讓想法更清楚的熔爐。每次測試、修正與重做，都讓成品更接近它應有的樣子。</p>
+      </div>
+      <div class="chapter-name right reveal"><small>WORLD 02</small><strong>地獄</strong></div>
+      <div class="project-runes" aria-label="能力清單"><span>品牌視覺</span><span>介面體驗</span><span>前端開發</span><span>互動敘事</span></div>
+    </section>
+
+    <section class="world chapter-end story-section page-fold" id="end" data-chapter="03" aria-labelledby="end-title">
+      <div class="scene scene-end" data-parallax aria-hidden="true"></div><div class="chapter-shade end-shade"></div>
+      <div class="rail" aria-hidden="true"><b></b><i></i><b></b><i></i><b></b></div>
+      <div class="chapter-copy chapter-copy-left end-copy reveal">
+        <p class="eyebrow">03 / SELECTED WORK</p>
+        <h2 id="end-title">終界之後，<br />是製作名單。</h2>
+        <p>一個作品完成，不代表旅程結束。它會成為下一次探索的座標，也記錄一路上做過的選擇。</p>
+        <div class="mini-projects"><article><span>01</span><h3>浮島誌</h3><p>品牌體驗 · 2026</p></article><article><span>02</span><h3>專注地圖</h3><p>產品設計 · 2026</p></article><article><span>03</span><h3>靈感檔案</h3><p>網站開發 · 2025</p></article></div>
+      </div>
+      <div class="chapter-name right reveal"><small>WORLD 03</small><strong>終界</strong></div>
+    </section>
+
+    <section class="credits story-section" id="credits" data-chapter="04" aria-labelledby="credits-title">
+      <canvas id="starfield" aria-hidden="true"></canvas>
+      <div class="rail" aria-hidden="true"><b></b><i></i><b></b><i></i><b></b></div>
+      <div class="credits-heading reveal"><p class="eyebrow">04 / CREDITS</p><h2 id="credits-title">旅人的製作名單</h2><p>一個人的專長，也可以像一支完整隊伍。</p></div>
+      <div class="name-cloud" aria-label="技能與角色">
+        <span style="--x:9;--y:18;--s:1.1">Art Direction</span><span style="--x:28;--y:28;--s:.8">HTML</span><span style="--x:44;--y:17;--s:1.3">YOUR NAME</span><span style="--x:70;--y:22;--s:.85">Interaction</span><span style="--x:83;--y:36;--s:1">CSS</span><span style="--x:16;--y:48;--s:.75">Storytelling</span><span style="--x:35;--y:57;--s:1">Visual Design</span><span style="--x:61;--y:50;--s:.78">JavaScript</span><span style="--x:75;--y:66;--s:1.2">Creative Code</span><span style="--x:19;--y:76;--s:.9">Taiwan</span><span style="--x:48;--y:80;--s:.72">Always Curious</span>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-monogram" aria-hidden="true">YN</div>
+      <div class="contact-copy reveal"><p class="eyebrow">START A NEW WORLD</p><h2 id="contact-title">一起建造下一個世界。</h2><p>有合作想法、工作邀請，或只是想聊聊一個有趣的點子，都歡迎寫信給我。</p><a href="mailto:hello@example.com">hello@example.com <span>↗</span></a><button class="copy-button" type="button" data-email="hello@example.com">複製信箱</button></div>
+      <div class="footer-info"><div class="logo dark"><span class="logo-zh">雲境創作</span><span class="logo-en">YUNJING<br />CREATIVE</span></div><dl><div><dt>位置</dt><dd>TAIWAN</dd></div><div><dt>專長</dt><dd>DESIGN / WEB / CODE</dd></div><div><dt>年份</dt><dd id="year">2026</dd></div></dl></div>
+    </section>
+  </main>
+  <div class="toast" role="status" aria-live="polite">信箱已複製</div>
+</body>
+</html>
